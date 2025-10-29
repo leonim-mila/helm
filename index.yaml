@@ -3,11 +3,11 @@ entries:
   kafka-minimal:
   - apiVersion: v2
     appVersion: "3.7"
-    created: "2025-10-29T06:53:48.643021946+01:00"
+    created: "2025-10-29T07:33:21.5929766+01:00"
     description: Minimal Apache Kafka single-node chart
-    digest: 1b9cfa014bc4fd2fdfa329ac273e71a2056b483ce25bb0b5f954b303a4f3ab09
+    digest: 268e8fb1065513fea215f5a659b1e4db86b7d0ae9568691aec610ac5e7093e71
     name: kafka-minimal
     urls:
     - https://leonim-mila.github.io/helm/kafka-minimal-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-29T06:53:48.642591579+01:00"
+generated: "2025-10-29T07:33:21.59182542+01:00"

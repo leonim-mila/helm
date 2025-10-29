@@ -1,0 +1,5 @@
+apiVersion: v2
+name: kafka-minimal
+description: Minimal Apache Kafka single-node chart
+version: 0.1.0
+appVersion: "3.7"

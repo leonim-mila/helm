@@ -13,9 +13,9 @@ spec:
       labels:
         app: kafka
     spec:
-      securityContext:
-        runAsNonRoot: true
-        fsGroup: 0
+      #securityContext:
+      #  runAsNonRoot: true
+      #  fsGroup: 0
       containers:
       - name: kafka
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
