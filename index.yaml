@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  kafka-minimal:
+  - apiVersion: v2
+    appVersion: "3.7"
+    created: "2025-10-29T06:53:48.643021946+01:00"
+    description: Minimal Apache Kafka single-node chart
+    digest: 1b9cfa014bc4fd2fdfa329ac273e71a2056b483ce25bb0b5f954b303a4f3ab09
+    name: kafka-minimal
+    urls:
+    - https://leonim-mila.github.io/helm/charts/kafka-minimal-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-10-29T06:53:48.642591579+01:00"
