@@ -8,6 +8,6 @@ entries:
     digest: 1b9cfa014bc4fd2fdfa329ac273e71a2056b483ce25bb0b5f954b303a4f3ab09
     name: kafka-minimal
     urls:
-    - https://leonim-mila.github.io/helm/charts/kafka-minimal-0.1.0.tgz
+    - https://leonim-mila.github.io/helm/kafka-minimal-0.1.0.tgz
     version: 0.1.0
 generated: "2025-10-29T06:53:48.642591579+01:00"
