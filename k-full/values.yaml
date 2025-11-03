@@ -1,0 +1,10 @@
+namespace: kafka
+kafka:
+  image: quay.io/leonim/kafka:latest
+  replicas: 1
+  brokerId: 1
+  port: 9092
+topicsFile: topics.txt
+topics:
+  enabled: true
+storageClassName: gp3-csi

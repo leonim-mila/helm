@@ -1,0 +1,281 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kafka-topics
+  namespace: {{ .Values.namespace }}
+data:
+  topics.yaml: |
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic KafkaRealignTr532NbiTabMsg
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_comm_req
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_comm_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_lldp_req
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_lldp_res
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic nms5wi_avc
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic nms5wi_cresp
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic nms5wi_ocr
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic nms5wi_odl
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic nms5wi_oth
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic nms5wi_scn
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltAsdCommandIn
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltAsdLogout
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltBkuSnmpReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltCreateSymbolNotification
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltDeleteSymbolNotification
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltFirmwareUpgrade
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltFtpReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltGetAtuFileReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltNeAutoDiscCfgChange
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltNeTypeChange
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltPhLinkNotification
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltPsmCreateSymbolNotification
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltPsmDeleteSymbolNotification
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltReqResult
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltRiaAll
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpSetReq --config compression.type=gzip
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic v3UserRegister
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltTrapWakeup
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic ovtrapdProxy
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic ovtrapdTrap
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltAlarm
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetReq --config compression.type=gzip
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetRes --config compression.type=gzip
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResPoll --config compression.type=gzip
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpSetRes --config compression.type=gzip
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetFwd --config compression.type=gzip
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic asdCommandIn
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic asdCommandRes
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic ovTrapJson
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic ovTrapJson_27
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic ovTrapJson_29
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic ovTrapJson_67
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic ovTrapJson_70
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic pltChangeStatus
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic pltSnmpTimeout
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic pltUpdateSymbolNotification
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic networkStatus
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic nmsEventLog
+    -replication-factor 1 --partitions 1 --config retention.bytes=500000000 --topic pltTransactionLog
+    -replication-factor 1 --partitions 10 --config retention.bytes=50000000 --topic pltUploadReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfLegacyResp
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfLegacyReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltYangModule
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfResp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_db_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_ces_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_cmd_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_equipmentuser_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_georef_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_mec_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_mplsr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_mplsc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_fmw_notp_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_eer_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_adsr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_asdr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_beasr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_ear_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_eir_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_eor_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fdr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fur_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_mdr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_mer_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_nur_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_rdr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_tlr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_tmr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_tpr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_arr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rpm_pmc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rpm_pmr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rtm_ahr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rtm_ah_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_arc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_eac_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_eec_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_eoc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_fdc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_fuc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_gctc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_mdc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_nuc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_rdc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_sdc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_tlc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_tmc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_tpc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_db_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_ces_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_cmd_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_equipmentuser_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_georef_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_mec_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_mplsr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_siae_mplsc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_fmw_notp_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_adsr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_eer_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_asdr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_beasr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_ear_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_eir_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_eor_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fdr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fur_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_mdr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_mer_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_nur_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_rdr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_tlr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_tmr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_tpr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_arr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rpm_pmc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rpm_pmr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rtm_ahr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rtm_ah_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_arc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_eac_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_eec_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_eoc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_fdc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_fuc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_gctc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_mdc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_rdc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_nuc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_sdc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_tlc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_tmc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_tpc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_mtom_file_up_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_mtom_file_up_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_mtom_file_down_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_mtom_file_down_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic summary_input
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic summary_output
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic propagation_input
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic propagation_output
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic alarms_input
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic alarms_output
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic congestion_input
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic congestion_output
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic emaildata
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic eneff-template-alignment-recalculation
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000006-changelog
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000006-repartition
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000018-changelog
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000018-repartition
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000032-changelog
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000032-repartition
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000046-changelog
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KSTREAM-AGGREGATE-STATE-STORE-0000000046-repartition
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KTABLE-SUPPRESS-STATE-STORE-0000000012-changelog
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KTABLE-SUPPRESS-STATE-STORE-0000000024-changelog
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KTABLE-SUPPRESS-STATE-STORE-0000000038-changelog
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic EqStatusStatistics-KTABLE-SUPPRESS-STATE-STORE-0000000052-changelog
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_alarmseverity_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_alarmseverity_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_alarmsilencer_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_alarmsilencer_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_antitheft_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_antitheft_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_backuprestore_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_backuprestore_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_devicesecuritymanager_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_devicesecuritymanager_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eneff_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eneff_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqactions_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqactions_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqautodiscovery_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqautodiscovery_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqlog_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqlog_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqstat_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_eqstat_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_ethoam_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_ethoam_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_featurekeys_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_featurekeys_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_generic_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_generic_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_networkviewer_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_networkviewer_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_performancemonitoring_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_performancemonitoring_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_psmservice_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_psmservice_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_ringservice_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_ringservice_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_smartfwupgrade_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_smartfwupgrade_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_snmp_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_snmp_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_swmanager_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_swmanager_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_synchronization_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_temperaturemonitor_req
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_temperaturemonitor_res
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic Nhm_Server_Load
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic nms5wi_avn
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_mtom_file_down_res
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fmpc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fmpr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fmpr_res
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_fmpr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_sr_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_mri_sr_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_irc_req
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_irc_resp
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic nms5wi_wsnbi_rp_sdc
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic pltAttributeValueChange
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltGetReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfConnectionStatus
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfLegacyRes
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfNot
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfRes
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfTrap
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=50000000 --topic pltNetconfUploadReq
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltNeTypeChange1
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltNewYangModules
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltObjectCreation
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltObjectDeletion
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltProcessStart
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltReadRadioPort
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResCS
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_10
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_2
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_3
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_4
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_5
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_6
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_7
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_8
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --config compression.type=gzip --topic pltSnmpGetResCS_9
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResp
+    -replication-factor 1 --partitions 1 --config retention.bytes=50000000 --topic pltStateChangeInfo
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic ptlRiaAll
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic realtime_data
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic realtime_data_storage
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic realtime_file_delete
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic Server_Memory
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic smdc_cmd
+    -replication-factor 1 --partitions 3 --config retention.ms=300000 --config file.delete.delay.ms=300000 --config compression.type=gzip --topic Tomcat_Health
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResConnCore
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResConnGUI
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetReqConnCore
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetReqConnGUI
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltUploadReqConnCore
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResAlrRia
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResLldp
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResFtpRmon
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResPolling
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResFtpManager
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResAlrSilencer
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResPostAction
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetReqGenCore
+    -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetResASD
+    -replication-factor 1 --partitions 5 --config retention.ms=300000 --config retention.bytes=5000000 --topic pltSnmpGetReqASD
+
