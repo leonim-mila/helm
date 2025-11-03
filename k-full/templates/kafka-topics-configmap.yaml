@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.topics.configMapName }}
   namespace: {{ .Values.namespace }}
 data:
-  topics.yaml: |
+  topics.txt: |
     -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic KafkaRealignTr532NbiTabMsg
     -replication-factor 1 --partitions 3 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_comm_req
     -replication-factor 1 --partitions 1 --config retention.ms=300000 --config retention.bytes=5000000 --topic executor_comm_res
