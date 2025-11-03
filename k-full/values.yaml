@@ -7,4 +7,6 @@ kafka:
 topicsFile: topics.txt
 topics:
   enabled: true
-storageClassName: gp3-csi
+pvc:
+  size: 5Gi
+  storageClassName: "gp3-csi"
