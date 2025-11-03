@@ -2,7 +2,7 @@ namespace: kafka
 storageClassName: gp3-csi
 
 kafka:
-  image: apache/kafka:3.7.0
+  image: quay.io/leonim/kafka
   port: 9092
   replicas: 1
   brokerId: 1
