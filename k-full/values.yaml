@@ -1,12 +1,16 @@
 namespace: kafka
+storageClassName: gp3-csi
+
 kafka:
-  image: quay.io/leonim/kafka:latest
+  image: apache/kafka:3.7.0
+  port: 9092
   replicas: 1
   brokerId: 1
-  port: 9092
-topicsFile: topics.txt
+  storageSize: 5Gi
+  cpu: "500m"
+  memory: "3Gi"
+
 topics:
   enabled: true
-pvc:
-  size: 5Gi
-  storageClassName: "gp3-csi"
+  configMapName: kafka-topics
+

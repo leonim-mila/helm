@@ -1,9 +1,11 @@
+{{- if .Values.topics.enabled }}
 apiVersion: batch/v1
 kind: Job
 metadata:
   name: kafka-topic-creator
   namespace: {{ .Values.namespace }}
 spec:
+  backoffLimit: 3
   template:
     spec:
       restartPolicy: OnFailure
@@ -15,14 +17,17 @@ spec:
           - |
             echo "Aspetto Kafka..."
             until nc -z kafka.{{ .Values.namespace }}.svc.cluster.local {{ .Values.kafka.port }}; do sleep 2; done
+            echo "Kafka disponibile, creo i topic..."
             while read line; do
-              kafka-topics.sh --create --if-not-exists $line --bootstrap-server kafka.{{ .Values.namespace }}.svc.cluster.local:{{ .Values.kafka.port }};
+              kafka-topics.sh --create --if-not-exists $line \
+                --bootstrap-server kafka.{{ .Values.namespace }}.svc.cluster.local:{{ .Values.kafka.port }};
             done < /topics/topics.txt
-
         volumeMounts:
         - name: topics
           mountPath: /topics
       volumes:
       - name: topics
         configMap:
-          name: kafka-topics
+          name: {{ .Values.topics.configMapName }}
+{{- end }}
+

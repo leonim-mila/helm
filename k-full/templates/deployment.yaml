@@ -4,7 +4,7 @@ metadata:
   name: kafka
   namespace: {{ .Values.namespace }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.kafka.replicas }}
   selector:
     matchLabels:
       app: kafka
@@ -13,50 +13,35 @@ spec:
       labels:
         app: kafka
     spec:
-      #securityContext:
-      #  runAsNonRoot: true
-      #  fsGroup: 0
+      securityContext:
+        runAsUser: 1000
+        fsGroup: 1000
       containers:
       - name: kafka
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        image: {{ .Values.kafka.image }}
         ports:
-        - containerPort: 9092
+        - containerPort: {{ .Values.kafka.port }}
         env:
-        - name: KAFKA_PROCESS_ROLES
-          value: "broker,controller"
-        - name: KAFKA_NODE_ID
-          value: "1"
-        - name: KAFKA_CONTROLLER_QUORUM_VOTERS
-          value: "1@localhost:9093"
+        - name: KAFKA_BROKER_ID
+          value: "{{ .Values.kafka.brokerId }}"
         - name: KAFKA_LISTENERS
-          value: "PLAINTEXT://:9092,CONTROLLER://:9093"
+          value: PLAINTEXT://:{{ .Values.kafka.port }}
         - name: KAFKA_ADVERTISED_LISTENERS
-          value: "PLAINTEXT://kafka.{{ .Values.namespace }}.svc.cluster.local:9092"
-        - name: KAFKA_CONTROLLER_LISTENER_NAMES
-          value: "CONTROLLER"
+          value: PLAINTEXT://kafka.{{ .Values.namespace }}.svc.cluster.local:{{ .Values.kafka.port }}
         - name: KAFKA_LOG_DIRS
-          value: "/var/lib/kafka/data"
+          value: /var/lib/kafka/data
+        resources:
+          requests:
+            cpu: {{ .Values.kafka.cpu }}
+            memory: {{ .Values.kafka.memory }}
+          limits:
+            cpu: {{ .Values.kafka.cpu }}
+            memory: {{ .Values.kafka.memory }}
         volumeMounts:
         - name: kafka-data
-          mountPath: /var/lib/kafka/data
-          subPath: kafka
-        readinessProbe:
-          tcpSocket:
-            port: 9092
-          initialDelaySeconds: 15
-          periodSeconds: 10
-        livenessProbe:
-          tcpSocket:
-            port: 9092
-          initialDelaySeconds: 30
-          periodSeconds: 30
-        startupProbe:
-          tcpSocket:
-            port: 9092
-          failureThreshold: 30
-          periodSeconds: 10
+          mountPath: /var/lib/kafka
       volumes:
       - name: kafka-data
         persistentVolumeClaim:
-          claimName: kafka-pvc
+          claimName: kafka-data
+
