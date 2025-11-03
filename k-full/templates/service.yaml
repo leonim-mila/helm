@@ -3,10 +3,14 @@ kind: Service
 metadata:
   name: kafka
   namespace: {{ .Values.namespace }}
+  labels:
+    app: kafka
 spec:
-  clusterIP: None
+  type: ClusterIP
+  ports:
+  - name: kafka
+    port: {{ .Values.kafka.port }}
+    targetPort: {{ .Values.kafka.port }}
   selector:
     app: kafka
-  ports:
-    - port: {{ .Values.kafka.startingPort }}
-      targetPort: {{ .Values.kafka.startingPort }}
+
