@@ -9,7 +9,7 @@ entries:
     name: kafka
     type: application
     urls:
-    - https://leonim-mila.github.io/helm/charts/kafka-0.1.0.tgz
+    - https://leonim-mila.github.io/helm/kafka-0.1.0.tgz
     version: 0.1.0
   kafka-minimal:
   - apiVersion: v2
@@ -19,6 +19,6 @@ entries:
     digest: 5c59dbc9c8753d255d6ed41eef9ae9c74077ac9b0c259d0a0319a6f8ca4fd161
     name: kafka-minimal
     urls:
-    - https://leonim-mila.github.io/helm/charts/kafka-minimal-0.1.0.tgz
+    - https://leonim-mila.github.io/helm/kafka-minimal-0.1.0.tgz
     version: 0.1.0
 generated: "2025-11-03T12:04:39.998276975+01:00"
