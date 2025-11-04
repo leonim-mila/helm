@@ -3,9 +3,9 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-04T08:29:38.078671742+01:00"
+    created: "2025-11-04T08:48:21.124572277+01:00"
     description: Helm chart for Apache Kafka
-    digest: fcf847da174aa2b8b14bf228747e05de3850cd4a68031436ace238c568f8db66
+    digest: 49752f363b0b54b460de1359f259f7c627f539b90cb3d4c2e1244a8b67f958fe
     name: kafka
     type: application
     urls:
@@ -14,11 +14,11 @@ entries:
   kafka-minimal:
   - apiVersion: v2
     appVersion: 4.1.1-rc
-    created: "2025-11-04T08:29:38.079129058+01:00"
+    created: "2025-11-04T08:48:21.124726945+01:00"
     description: Minimal Apache Kafka single-node chart
     digest: 5c59dbc9c8753d255d6ed41eef9ae9c74077ac9b0c259d0a0319a6f8ca4fd161
     name: kafka-minimal
     urls:
     - https://leonim-mila.github.io/helm/kafka-minimal-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-04T08:29:38.077733616+01:00"
+generated: "2025-11-04T08:48:21.12416679+01:00"
