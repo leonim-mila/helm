@@ -1,0 +1,28 @@
+image:
+  repository: quay.io/leonim/oracle-free-slim-nonroot
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  name: oracle-db-svc
+  port: 1521
+
+storage:
+  size: 10Gi
+  class: gp3-csi
+ 
+oracle:
+  password: MySysPassword1
+  app_user: TMN
+  app_user_password:
+  pdb: NMS5UX
+  memory: 2048
+
+resources:
+  limits:
+    cpu: "1"
+    memory: "5Gi"
+  requests:
+    cpu: "1"
+    memory: "5Gi"
+ 

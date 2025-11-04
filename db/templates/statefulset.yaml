@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: oracle-db
+  labels:
+    app: oracle-db
+spec:
+  serviceName: {{ .Values.service.name }}
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oracle-db
+  template:
+    metadata:
+      labels:
+        app: oracle-db
+    spec:
+      containers:
+      - name: oracle-db
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+          - name: ORACLE_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "oracle-db.fullname" . }}-pass
+                key: password
+          - name: APP_USER
+            value: {{ .Values.oracle.app_user }}
+          - name: ORACLE_DATABASE
+            value: {{ .Values.oracle.pdb }}
+          - name: APP_USER_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "oracle-db.fullname" . }}-pass
+                key: user_password
+          - name: ORACLE_CHARACTERSET
+            value: WE8ISO8859P1
+        ports:
+          - containerPort: 1521
+        volumeMounts:
+          - name: data
+            mountPath: /opt/oracle/oradata
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: oracle-db-pvc
+        resources:
+{{- toYaml .Values.resources | nindent 10 }}
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: oracle-db-pvc
+spec:
+  accessModes:
+    - ReadWriteOncePod
+  resources:
+    requests:
+      storage: {{ .Values.storage.size }}
+  storageClassName: {{ .Values.storage.class }}
+ 
