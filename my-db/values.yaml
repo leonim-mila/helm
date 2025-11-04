@@ -1,5 +1,5 @@
 image:
-  repository: quay.io/leonim/oracle-free-slim-nonroot
+  repository: quay.io/leonim/calore
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -14,7 +14,7 @@ storage:
 oracle:
   password: MySysPassword1
   app_user: TMN
-  app_user_password:
+  app_user_password: MyUserPass
   pdb: NMS5UX
   memory: 2048
 

@@ -23,7 +23,7 @@ spec:
           - name: ORACLE_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: {{ include "oracle-db.fullname" . }}-pass
+                name: {{ include "my-db.fullname" . }}-pass
                 key: password
           - name: APP_USER
             value: {{ .Values.oracle.app_user }}
@@ -32,7 +32,7 @@ spec:
           - name: APP_USER_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: {{ include "oracle-db.fullname" . }}-pass
+                name: {{ include "my-db.fullname" . }}-pass
                 key: user_password
           - name: ORACLE_CHARACTERSET
             value: WE8ISO8859P1
