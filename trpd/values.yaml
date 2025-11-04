@@ -1,5 +1,6 @@
 namespace: default
- 
+storageClassName: gp3-csi
+
 image:
   repository: quay.io/leonim/testd
   tag: latest
@@ -8,13 +9,18 @@ image:
 replicaCount: 1
 
 trapd:
-    port: 162
+  port: 162
+  storageSize: 100M
+  failureThreshold: 15
+  initialDelaySeconds: 1800
+  periodSeconds: 1800
+  timeoutSeconds: 10
 
 kafka:
   host: kafka
   namespace: kafka
   port: 9092
-  fqdn: ""  # se vuoto, costruisce automaticamente kafka.<namespace>.svc.cluster.local:9092
+  fqdn: ""  # if empty, build kafka.<namespace>.svc.cluster.local:9092
  
 resources:
   limits:

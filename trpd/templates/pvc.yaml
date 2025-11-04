@@ -5,7 +5,8 @@ metadata:
   namespace: {{ .Values.namespace }}
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
+  storageClassName: {{ .Values.storageClassName }}
   resources:
     requests:
-      storage: 100M
+      storage: {{ .Values.kafka.storageSize }}
