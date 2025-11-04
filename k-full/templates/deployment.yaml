@@ -33,6 +33,14 @@ spec:
           value: PLAINTEXT://kafka.{{ .Values.namespace }}.svc.cluster.local:{{ .Values.kafka.port }}
         - name: KAFKA_LOG_DIRS
           value: /var/lib/kafka/data
+        livenessProbe:
+            exec:
+              command:
+                - /opt/kafka/bin/kafka-cluster.sh cluster-id --bootstrap-server kafka.{{ .Values.namespace }}.svc.cluster.local:{{ .Values.kafka.port }} || exit 1
+            failureThreshold: {{ .Values.kafka.failureThreshold }}
+            initialDelaySeconds: {{ .Values.kafka. initialDelaySeconds}}
+            periodSeconds: {{ .Values.kafka.periodSeconds}}
+            timeoutSeconds: {{ .Values.kafka.timeoutSeconds }}
         resources:
           requests:
             cpu: {{ .Values.kafka.cpu }}
