@@ -3,7 +3,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-04T14:51:28.419152826+01:00"
+    created: "2025-11-04T15:03:03.776540411+01:00"
     description: Helm chart for Apache Kafka
     digest: 49752f363b0b54b460de1359f259f7c627f539b90cb3d4c2e1244a8b67f958fe
     name: kafka
@@ -14,32 +14,21 @@ entries:
   my-db:
   - apiVersion: v2
     appVersion: 23c
-    created: "2025-11-04T14:51:28.419367288+01:00"
+    created: "2025-11-04T15:03:03.776776285+01:00"
     description: Deploy Database on OpenShift
-    digest: 8044e6d8b61ff86d00a7037f697914e52d3344efe56fdc5286d3ec3e61aa7d9b
+    digest: 7500eaa222e2279934a30aadfe5685424d8643610d05747d49e6b4273b13028d
     name: my-db
     type: application
     urls:
     - https://leonim-mila.github.io/helm/my-db-0.1.0.tgz
     version: 0.1.0
-  oracle-db:
-  - apiVersion: v2
-    appVersion: 23c
-    created: "2025-11-04T14:51:28.419569578+01:00"
-    description: Deploy Database on OpenShift
-    digest: 459c6899a9fea2ebd72187ce048ddcfffb16f4f24bcd4d0bbb5f018879c1cfdb
-    name: oracle-db
-    type: application
-    urls:
-    - https://leonim-mila.github.io/helm/oracle-db-0.1.0.tgz
-    version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-04T14:51:28.419790977+01:00"
+    created: "2025-11-04T15:03:03.777017694+01:00"
     description: Helm chart for trapd
     digest: 71c30f98b6623388704b7ac1a3ae87b59117409a52484a5fa2bacb7127c0b3f4
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-04T14:51:28.418732222+01:00"
+generated: "2025-11-04T15:03:03.77603783+01:00"
