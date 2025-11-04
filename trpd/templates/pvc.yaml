@@ -9,4 +9,4 @@ spec:
   storageClassName: {{ .Values.storageClassName }}
   resources:
     requests:
-      storage: {{ .Values.kafka.storageSize }}
+      storage: {{ .Values.trapd.storageSize }}
