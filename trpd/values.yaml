@@ -1,0 +1,26 @@
+namespace: default
+ 
+image:
+  repository: quay.io/leonim/testd
+  tag: latest
+  pullPolicy: IfNotPresent
+ 
+replicaCount: 1
+
+trapd:
+    port: 162
+
+kafka:
+  host: kafka
+  namespace: kafka
+  port: 9092
+  fqdn: ""  # se vuoto, costruisce automaticamente kafka.<namespace>.svc.cluster.local:9092
+ 
+resources:
+  limits:
+    cpu: "100m"
+    memory: "128Mi"
+  requests:
+    cpu: "50m"
+    memory: "64Mi"
+ 

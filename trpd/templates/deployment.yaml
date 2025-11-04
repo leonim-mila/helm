@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trapd
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: trapd
+  template:
+    metadata:
+      labels:
+        app: trapd
+    spec:
+      volumes:
+      - name: trapd-data
+        persistentVolumeClaim:
+          claimName: trapd-data
+      containers:
+      - name: trapd
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        livenessProbe:
+            exec:
+              command:
+                - /app/healthcheck.sh trapd
+            failureThreshold: {{ .Values.kafka.failureThreshold }}
+            initialDelaySeconds: {{ .Values.kafka.initialDelaySeconds }}
+            periodSeconds: {{ .Values.kafka.periodSeconds }}
+            timeoutSeconds: {{ .Values.kafka.timeoutSeconds }}
+        volumeMounts:
+        - name: trapd-data
+          mountPath: /var/net-snmp
+        envFrom:
+          - configMapRef:
+              name: trapd-config
+        resources:
+{{- toYaml .Values.resources | nindent 10 }}

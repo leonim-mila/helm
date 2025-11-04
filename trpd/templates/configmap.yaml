@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: trapd-config
+  namespace: {{ .Values.namespace }}
+data:
+  SNMP_TRAP: 1024:udp
+  KAFKA_BROKERS: "{{ if .Values.kafka.fqdn }}{{ .Values.kafka.fqdn }}{{ else }}{{ .Values.kafka.host }}.{{ .Values.kafka.namespace }}.svc.cluster.local:{{ .Values.kafka.port }}{{ end }}"
+ 
