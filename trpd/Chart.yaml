@@ -1,4 +1,0 @@
-apiVersion: v2
-description: Helm chart for trapd
-name: trapd-chart
-version: 0.1.0
