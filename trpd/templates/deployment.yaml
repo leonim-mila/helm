@@ -25,10 +25,10 @@ spec:
             exec:
               command:
                 - /app/healthcheck.sh trapd
-            failureThreshold: {{ .Values.kafka.failureThreshold }}
-            initialDelaySeconds: {{ .Values.kafka.initialDelaySeconds }}
-            periodSeconds: {{ .Values.kafka.periodSeconds }}
-            timeoutSeconds: {{ .Values.kafka.timeoutSeconds }}
+            failureThreshold: {{ .Values.trapd.failureThreshold }}
+            initialDelaySeconds: {{ .Values.trapd.initialDelaySeconds }}
+            periodSeconds: {{ .Values.trapd.periodSeconds }}
+            timeoutSeconds: {{ .Values.trapd.timeoutSeconds }}
         volumeMounts:
         - name: trapd-data
           mountPath: /var/net-snmp

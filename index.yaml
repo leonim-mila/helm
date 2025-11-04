@@ -3,7 +3,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-04T11:06:37.713304826+01:00"
+    created: "2025-11-04T11:19:37.078598449+01:00"
     description: Helm chart for Apache Kafka
     digest: 49752f363b0b54b460de1359f259f7c627f539b90cb3d4c2e1244a8b67f958fe
     name: kafka
@@ -13,11 +13,11 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-04T11:06:37.713567268+01:00"
+    created: "2025-11-04T11:19:37.078853934+01:00"
     description: Helm chart for trapd
-    digest: 99b766e933ed5471d3c4bd949690429a7909181e08245306605f6338f8e2bf07
+    digest: 05fc7bc468b7b9178787cb416255a00dedf4f6f4636d08598e3279317dd61066
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-04T11:06:37.712832646+01:00"
+generated: "2025-11-04T11:19:37.078131604+01:00"
