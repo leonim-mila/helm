@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   ems6d-chart:
   - apiVersion: v2
-    created: "2025-11-06T15:36:53.635968672+01:00"
+    created: "2025-11-06T16:08:46.274663872+01:00"
     description: Helm chart for ems6d
-    digest: 3eae39692c9e53f60c1810a3d704b96ddac59d2ad2609c4d1557bec5b3e9c26b
+    digest: b06de7547099839499ea22f2e70daabbe099f9aff0e8288b746ebb630c1e83c6
     name: ems6d-chart
     urls:
     - https://leonim-mila.github.io/helm/ems6d-chart-0.1.0.tgz
@@ -12,7 +12,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-06T15:36:53.636374119+01:00"
+    created: "2025-11-06T16:08:46.275635122+01:00"
     description: Helm chart for Apache Kafka
     digest: d735f11d579abbffff9535635497975568189ab463d3991d5c17401fdc3ee80a
     name: kafka
@@ -22,11 +22,11 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-06T15:36:53.636631818+01:00"
+    created: "2025-11-06T16:08:46.276380446+01:00"
     description: Helm chart for trapd
     digest: a8352da70f5be1314efaca45453b0965201fef9e7ffc93431b4f822e482f9971
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-06T15:36:53.635471384+01:00"
+generated: "2025-11-06T16:08:46.273549003+01:00"
