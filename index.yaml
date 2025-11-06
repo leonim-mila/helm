@@ -11,17 +11,6 @@ entries:
     urls:
     - https://leonim-mila.github.io/helm/kafka-0.1.0.tgz
     version: 0.1.0
-  my-db:
-  - apiVersion: v2
-    appVersion: 23c
-    created: "2025-11-06T13:46:32.304417173+01:00"
-    description: Deploy Database on OpenShift
-    digest: 88f1007416440af73398ae5c1a58b2b08d216db4a1fc1f02d91f575996a5e265
-    name: my-db
-    type: application
-    urls:
-    - https://leonim-mila.github.io/helm/my-db-0.1.0.tgz
-    version: 0.1.0
   trapd-chart:
   - apiVersion: v2
     created: "2025-11-06T13:46:32.304643917+01:00"
