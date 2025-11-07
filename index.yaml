@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   ems6d-chart:
   - apiVersion: v2
-    created: "2025-11-07T11:01:28.064824006+01:00"
+    created: "2025-11-07T11:23:06.450358347+01:00"
     description: Helm chart for ems6d
     digest: 22f8b5ffc179a70feba002d1d7637d92663246d038173c15d3181307286034c5
     name: ems6d-chart
@@ -12,7 +12,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-07T11:01:28.065114322+01:00"
+    created: "2025-11-07T11:23:06.450655701+01:00"
     description: Helm chart for Apache Kafka
     digest: d735f11d579abbffff9535635497975568189ab463d3991d5c17401fdc3ee80a
     name: kafka
@@ -20,9 +20,22 @@ entries:
     urls:
     - https://leonim-mila.github.io/helm/kafka-0.1.0.tgz
     version: 0.1.0
+  oracle-db:
+  - apiVersion: v1
+    created: "2025-11-07T11:23:06.45091649+01:00"
+    description: Oracle Database Server
+    digest: c8f6f9425883c5029b2444baa84b8d18f954bd9c0b0df5a33514e0a47184eb2d
+    home: http://www.oracle.com
+    keywords:
+    - oracle
+    - database
+    name: oracle-db
+    urls:
+    - https://leonim-mila.github.io/helm/oracle-db-1.0.0.tgz
+    version: 1.0.0
   oracle-tns-config:
   - apiVersion: v2
-    created: "2025-11-07T11:01:28.065288059+01:00"
+    created: "2025-11-07T11:23:06.451089167+01:00"
     description: A Helm chart to create a Secret for db
     digest: a7b9d16ec7c4734f64875c585bbd1fa119e5bcb697ef17b9960f022689ef680f
     name: oracle-tns-config
@@ -31,7 +44,7 @@ entries:
     version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
-    created: "2025-11-07T11:01:28.065565487+01:00"
+    created: "2025-11-07T11:23:06.451349311+01:00"
     description: Helm chart for snmp2kafka deamons
     digest: 61f3a2f93a875252559de1b32a67b1fb82837de0080973a4be18b10fd41aacd5
     name: snmp2kafka-chart
@@ -40,11 +53,11 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-07T11:01:28.065764792+01:00"
+    created: "2025-11-07T11:23:06.451572232+01:00"
     description: Helm chart for trapd
     digest: 434d10ebc73fecd47c9d151e3da968d1c490562fe1a2baf01bd6499635eaa2e6
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-07T11:01:28.064475251+01:00"
+generated: "2025-11-07T11:23:06.449985372+01:00"
