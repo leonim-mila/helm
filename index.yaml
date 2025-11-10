@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   ems6d-chart:
   - apiVersion: v2
-    created: "2025-11-10T16:42:56.857252276+01:00"
+    created: "2025-11-10T16:46:17.058738786+01:00"
     description: Helm chart for ems6d
     digest: 22f8b5ffc179a70feba002d1d7637d92663246d038173c15d3181307286034c5
     name: ems6d-chart
@@ -11,9 +11,9 @@ entries:
     version: 0.1.0
   jcore-chart:
   - apiVersion: v2
-    created: "2025-11-10T16:42:56.858194569+01:00"
+    created: "2025-11-10T16:46:17.05955014+01:00"
     description: Helm chart for java deamons
-    digest: 14cdc67ac87789d0b748f600c685a2c4d68a948a492e51a7e077232a88cda3b3
+    digest: b2060ed2594aa238ffd7e2065e62b9e56df2016bdecd75352356c8aa24bc09c5
     name: jcore-chart
     urls:
     - https://leonim-mila.github.io/helm/jcore-chart-0.1.0.tgz
@@ -21,7 +21,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-10T16:42:56.858971898+01:00"
+    created: "2025-11-10T16:46:17.060281222+01:00"
     description: Helm chart for Apache Kafka
     digest: d735f11d579abbffff9535635497975568189ab463d3991d5c17401fdc3ee80a
     name: kafka
@@ -31,7 +31,7 @@ entries:
     version: 0.1.0
   oracle-db:
   - apiVersion: v1
-    created: "2025-11-10T16:42:56.859764912+01:00"
+    created: "2025-11-10T16:46:17.060976713+01:00"
     description: Oracle Database Server
     digest: c8f6f9425883c5029b2444baa84b8d18f954bd9c0b0df5a33514e0a47184eb2d
     home: http://www.oracle.com
@@ -45,7 +45,7 @@ entries:
   oracle-free-chart:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-11-10T16:42:56.860404545+01:00"
+    created: "2025-11-10T16:46:17.061570079+01:00"
     description: Helm chart per gvenz/oracle-free su OpenShift
     digest: 5409e14691fc688d84b8569f5d4a83956f3700fbda3e2c001e2fa98666831913
     name: oracle-free-chart
@@ -54,7 +54,7 @@ entries:
     version: 0.1.0
   oracle-tns-config:
   - apiVersion: v2
-    created: "2025-11-10T16:42:56.860857197+01:00"
+    created: "2025-11-10T16:46:17.061913253+01:00"
     description: A Helm chart to create a Secret for db
     digest: 5ff1d8b68b224ac39fc33139e37206b8b4913ea6d9e3d2e21b91b74fb657b25c
     name: oracle-tns-config
@@ -63,7 +63,7 @@ entries:
     version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
-    created: "2025-11-10T16:42:56.861633315+01:00"
+    created: "2025-11-10T16:46:17.062362367+01:00"
     description: Helm chart for snmp2kafka deamons
     digest: f5369d405b80e7af24f62ecf78eaa50e62eff0e8d2184774ff0870ed5aeed8b2
     name: snmp2kafka-chart
@@ -72,11 +72,11 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-10T16:42:56.862233051+01:00"
+    created: "2025-11-10T16:46:17.062696119+01:00"
     description: Helm chart for trapd
     digest: 434d10ebc73fecd47c9d151e3da968d1c490562fe1a2baf01bd6499635eaa2e6
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-10T16:42:56.8561825+01:00"
+generated: "2025-11-10T16:46:17.057959852+01:00"
