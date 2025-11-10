@@ -43,15 +43,6 @@ entries:
     urls:
     - https://leonim-mila.github.io/helm/oracle-free-chart-0.1.0.tgz
     version: 0.1.0
-  oracle-tns-config:
-  - apiVersion: v2
-    created: "2025-11-10T11:00:34.734418449+01:00"
-    description: A Helm chart to create a Secret for db
-    digest: 5ff1d8b68b224ac39fc33139e37206b8b4913ea6d9e3d2e21b91b74fb657b25c
-    name: oracle-tns-config
-    urls:
-    - https://leonim-mila.github.io/helm/oracle-tns-config-0.1.0.tgz
-    version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
     created: "2025-11-10T11:00:34.734693651+01:00"
