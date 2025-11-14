@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   ems6d-chart:
   - apiVersion: v2
-    created: "2025-11-14T10:52:10.155005897+01:00"
+    created: "2025-11-14T10:57:47.888078593+01:00"
     description: Helm chart for ems6d
     digest: 22f8b5ffc179a70feba002d1d7637d92663246d038173c15d3181307286034c5
     name: ems6d-chart
@@ -11,7 +11,7 @@ entries:
     version: 0.1.0
   jcore-chart:
   - apiVersion: v2
-    created: "2025-11-14T10:52:10.155456201+01:00"
+    created: "2025-11-14T10:57:47.888457068+01:00"
     description: Helm chart for java deamons
     digest: 2e1af84724d4ee9ee7fca3243436034e9d0d8a79c303ce4ab3e870680225ac31
     name: jcore-chart
@@ -21,7 +21,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-14T10:52:10.155763661+01:00"
+    created: "2025-11-14T10:57:47.888805146+01:00"
     description: Helm chart for Apache Kafka
     digest: d735f11d579abbffff9535635497975568189ab463d3991d5c17401fdc3ee80a
     name: kafka
@@ -31,16 +31,16 @@ entries:
     version: 0.1.0
   my-db:
   - apiVersion: v2
-    created: "2025-11-14T10:52:10.156004936+01:00"
+    created: "2025-11-14T10:57:47.88904083+01:00"
     description: Helm chart per Oracle DB container
-    digest: 2361b2982cc0a426a2ad2777ef84567bbc719173221a047c1e047f33914a2243
+    digest: 78178b5f8fefe469b4109a1c4a231fc721efa9437b535579f758181a88440378
     name: my-db
     urls:
     - https://leonim-mila.github.io/helm/my-db-0.1.0.tgz
     version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
-    created: "2025-11-14T10:52:10.15627307+01:00"
+    created: "2025-11-14T10:57:47.889639058+01:00"
     description: Helm chart for snmp2kafka deamons
     digest: d8f7693901cd6bfe109ec0422d56bdaa1579cac7115d175bf9bdcd7cff765cba
     name: snmp2kafka-chart
@@ -49,11 +49,11 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-14T10:52:10.156509635+01:00"
+    created: "2025-11-14T10:57:47.890028083+01:00"
     description: Helm chart for trapd
     digest: 434d10ebc73fecd47c9d151e3da968d1c490562fe1a2baf01bd6499635eaa2e6
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-14T10:52:10.154578662+01:00"
+generated: "2025-11-14T10:57:47.887708703+01:00"
