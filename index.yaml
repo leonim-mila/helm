@@ -29,15 +29,6 @@ entries:
     urls:
     - https://leonim-mila.github.io/helm/kafka-0.1.0.tgz
     version: 0.1.0
-  my-db:
-  - apiVersion: v2
-    created: "2025-11-14T10:57:47.88904083+01:00"
-    description: Helm chart per Oracle DB container
-    digest: 78178b5f8fefe469b4109a1c4a231fc721efa9437b535579f758181a88440378
-    name: my-db
-    urls:
-    - https://leonim-mila.github.io/helm/my-db-0.1.0.tgz
-    version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
     created: "2025-11-14T10:57:47.889639058+01:00"
