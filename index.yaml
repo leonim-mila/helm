@@ -1,27 +1,9 @@
 apiVersion: v1
 entries:
-  ems6d-chart:
-  - apiVersion: v2
-    created: "2025-11-17T09:05:57.181307855+01:00"
-    description: Helm chart for ems6d
-    digest: 22f8b5ffc179a70feba002d1d7637d92663246d038173c15d3181307286034c5
-    name: ems6d-chart
-    urls:
-    - https://leonim-mila.github.io/helm/ems6d-chart-0.1.0.tgz
-    version: 0.1.0
-  jcore-chart:
-  - apiVersion: v2
-    created: "2025-11-17T09:05:57.181663302+01:00"
-    description: Helm chart for java deamons
-    digest: 2e1af84724d4ee9ee7fca3243436034e9d0d8a79c303ce4ab3e870680225ac31
-    name: jcore-chart
-    urls:
-    - https://leonim-mila.github.io/helm/jcore-chart-0.1.0.tgz
-    version: 0.1.0
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-17T09:05:57.181949201+01:00"
+    created: "2025-11-17T09:09:01.907272441+01:00"
     description: Helm chart for Apache Kafka
     digest: d735f11d579abbffff9535635497975568189ab463d3991d5c17401fdc3ee80a
     name: kafka
@@ -31,29 +13,11 @@ entries:
     version: 0.1.0
   my-db:
   - apiVersion: v2
-    created: "2025-11-17T09:05:57.182195823+01:00"
+    created: "2025-11-17T09:09:01.907505329+01:00"
     description: Helm chart for DB container
     digest: 8a10a7121cff8fe2bc15c6287543d27e5573b1aec879397b2c2e72c50c6efe4f
     name: my-db
     urls:
     - https://leonim-mila.github.io/helm/my-db-0.1.0.tgz
     version: 0.1.0
-  snmp2kafka-chart:
-  - apiVersion: v2
-    created: "2025-11-17T09:05:57.182477115+01:00"
-    description: Helm chart for snmp2kafka deamons
-    digest: d8f7693901cd6bfe109ec0422d56bdaa1579cac7115d175bf9bdcd7cff765cba
-    name: snmp2kafka-chart
-    urls:
-    - https://leonim-mila.github.io/helm/snmp2kafka-chart-0.1.0.tgz
-    version: 0.1.0
-  trapd-chart:
-  - apiVersion: v2
-    created: "2025-11-17T09:05:57.182690936+01:00"
-    description: Helm chart for trapd
-    digest: 434d10ebc73fecd47c9d151e3da968d1c490562fe1a2baf01bd6499635eaa2e6
-    name: trapd-chart
-    urls:
-    - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-11-17T09:05:57.18085926+01:00"
+generated: "2025-11-17T09:09:01.906859693+01:00"
