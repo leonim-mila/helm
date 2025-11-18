@@ -3,7 +3,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-18T14:50:39.668612215+01:00"
+    created: "2025-11-18T15:11:30.807614703+01:00"
     description: Helm chart for Apache Kafka
     digest: d735f11d579abbffff9535635497975568189ab463d3991d5c17401fdc3ee80a
     name: kafka
@@ -13,16 +13,16 @@ entries:
     version: 0.1.0
   legacy-broker-chart:
   - apiVersion: v2
-    created: "2025-11-18T14:50:39.668844996+01:00"
+    created: "2025-11-18T15:11:30.807837244+01:00"
     description: Helm chart for ems6d-keConnector
-    digest: 84304d2dfadc8de95779134c3d53d8f78ab63f59ca0b4473437dbdcd26b724ad
+    digest: 49a76d01b1b6aa13b48ade36c61a90795063ee080744934dc9b490b49e5c7f20
     name: legacy-broker-chart
     urls:
     - https://leonim-mila.github.io/helm/legacy-broker-chart-0.1.0.tgz
     version: 0.1.0
   my-db:
   - apiVersion: v2
-    created: "2025-11-18T14:50:39.669079818+01:00"
+    created: "2025-11-18T15:11:30.808153078+01:00"
     description: Helm chart for DB container
     digest: 2b107635710cdaf5cac4020d89bcfaabb1450709bd588bd774ea62f6cd3ec25a
     name: my-db
@@ -31,7 +31,7 @@ entries:
     version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
-    created: "2025-11-18T14:50:39.669337542+01:00"
+    created: "2025-11-18T15:11:30.808430804+01:00"
     description: Helm chart for snmp2kafka deamons
     digest: aaa1318d2e0bcb6786235aa404ae6f7ffe39413367401cf654ddbf8bc8e1bebf
     name: snmp2kafka-chart
@@ -40,11 +40,11 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-18T14:50:39.669551144+01:00"
+    created: "2025-11-18T15:11:30.808651367+01:00"
     description: Helm chart for trapd
     digest: 7bc2df305c780a7f746cee0be05115df96fd4ba558014bc624a9d26c5fae8167
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-18T14:50:39.668144658+01:00"
+generated: "2025-11-18T15:11:30.807107043+01:00"
