@@ -1,9 +1,18 @@
 apiVersion: v1
 entries:
+  jcore-chart:
+  - apiVersion: v2
+    created: "2025-11-19T11:30:08.164826721+01:00"
+    description: Helm chart for java deamons
+    digest: baccee77f54b7e3ad8fa212b510b6eed35c4db151e01994e4e0e9a5d3959327e
+    name: jcore-chart
+    urls:
+    - https://leonim-mila.github.io/helm/jcore-chart-0.1.0.tgz
+    version: 0.1.0
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-18T21:05:51.102382441+01:00"
+    created: "2025-11-19T11:30:08.165738475+01:00"
     description: Helm chart for Apache Kafka
     digest: d735f11d579abbffff9535635497975568189ab463d3991d5c17401fdc3ee80a
     name: kafka
@@ -13,7 +22,7 @@ entries:
     version: 0.1.0
   legacy-broker-chart:
   - apiVersion: v2
-    created: "2025-11-18T21:05:51.102691877+01:00"
+    created: "2025-11-19T11:30:08.166449635+01:00"
     description: Helm chart for ems6d-keConnector
     digest: 49a76d01b1b6aa13b48ade36c61a90795063ee080744934dc9b490b49e5c7f20
     name: legacy-broker-chart
@@ -22,7 +31,7 @@ entries:
     version: 0.1.0
   my-db:
   - apiVersion: v2
-    created: "2025-11-18T21:05:51.103028177+01:00"
+    created: "2025-11-19T11:30:08.166931845+01:00"
     description: Helm chart for DB container
     digest: 2b107635710cdaf5cac4020d89bcfaabb1450709bd588bd774ea62f6cd3ec25a
     name: my-db
@@ -31,7 +40,7 @@ entries:
     version: 0.1.0
   nmstrapd-chart:
   - apiVersion: v2
-    created: "2025-11-18T21:05:51.103339607+01:00"
+    created: "2025-11-19T11:30:08.167823195+01:00"
     description: Helm chart for trap-managers
     digest: c3b39975ec451ccb6653ea7cf1b7dfb486884bf49c9c724d42547e7cd95ba462
     name: nmstrapd-chart
@@ -40,7 +49,7 @@ entries:
     version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
-    created: "2025-11-18T21:05:51.103668279+01:00"
+    created: "2025-11-19T11:30:08.168613894+01:00"
     description: Helm chart for snmp2kafka deamons
     digest: a308f1c9487ca6a2b21b7552ed51abaa0ee00602a016b9b57860a0555845e5b5
     name: snmp2kafka-chart
@@ -49,11 +58,11 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-18T21:05:51.103961937+01:00"
+    created: "2025-11-19T11:30:08.169277134+01:00"
     description: Helm chart for trapd
     digest: 7bc2df305c780a7f746cee0be05115df96fd4ba558014bc624a9d26c5fae8167
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-18T21:05:51.101840239+01:00"
+generated: "2025-11-19T11:30:08.163290947+01:00"
