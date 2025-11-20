@@ -3,9 +3,9 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-20T07:44:20.487529983+01:00"
+    created: "2025-11-20T09:03:51.258252268+01:00"
     description: Helm chart for Apache Kafka
-    digest: d1531f43c83f2616dfa7860e797ae531648f995ba48d36a93bb4d570a32a44e1
+    digest: 08a96e554811fa021e476c1d27f9ebb3ec58408e0d5e741055647d4c852430b0
     name: kafka
     type: application
     urls:
@@ -13,11 +13,11 @@ entries:
     version: 0.1.0
   my-db:
   - apiVersion: v2
-    created: "2025-11-20T07:44:20.487828773+01:00"
+    created: "2025-11-20T09:03:51.258528292+01:00"
     description: Helm chart for DB container
     digest: 2b107635710cdaf5cac4020d89bcfaabb1450709bd588bd774ea62f6cd3ec25a
     name: my-db
     urls:
     - https://leonim-mila.github.io/helm/my-db-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-20T07:44:20.487076205+01:00"
+generated: "2025-11-20T09:03:51.257792499+01:00"
