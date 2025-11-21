@@ -3,9 +3,9 @@ entries:
   bit-kafka:
   - apiVersion: v2
     appVersion: 3.7.1-debian-12-r9
-    created: "2025-11-21T07:41:26.401847994+01:00"
+    created: "2025-11-21T07:49:51.236953877+01:00"
     description: Helm chart for Bitnami Kafka
-    digest: 660d93ea4fbdcd042c94d2893fe844dda2f5afcba322d6145a07837062c6ecff
+    digest: 6e127c1a4aa7c9db4b8d4e25e9fb1e6c5c71b88ff9ff9ab0517efd3f7576a689
     name: bit-kafka
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   kafka:
   - apiVersion: v2
     appVersion: 4.1.1-rc2
-    created: "2025-11-21T07:41:26.402226004+01:00"
+    created: "2025-11-21T07:49:51.237331626+01:00"
     description: Helm chart for Apache Kafka
     digest: 5612c88d54ca3b35d55f13403d10142d739dc8ae596d0b5cd820aff0506dfb9a
     name: kafka
@@ -24,11 +24,11 @@ entries:
     version: 0.1.6
   my-db:
   - apiVersion: v2
-    created: "2025-11-21T07:41:26.402485721+01:00"
+    created: "2025-11-21T07:49:51.23755384+01:00"
     description: Helm chart for DB container
     digest: 2b107635710cdaf5cac4020d89bcfaabb1450709bd588bd774ea62f6cd3ec25a
     name: my-db
     urls:
     - https://leonim-mila.github.io/helm/my-db-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-21T07:41:26.401384035+01:00"
+generated: "2025-11-21T07:49:51.236506847+01:00"
