@@ -3,7 +3,7 @@ entries:
   bit-kafka:
   - apiVersion: v2
     appVersion: 3.7.1-debian-12-r9
-    created: "2025-11-21T09:46:25.828538452+01:00"
+    created: "2025-11-21T10:49:16.984521432+01:00"
     description: Helm chart for Bitnami Kafka
     digest: 6e127c1a4aa7c9db4b8d4e25e9fb1e6c5c71b88ff9ff9ab0517efd3f7576a689
     name: bit-kafka
@@ -13,7 +13,7 @@ entries:
     version: 0.1.0
   legacy-broker-chart:
   - apiVersion: v2
-    created: "2025-11-21T09:46:25.828972608+01:00"
+    created: "2025-11-21T10:49:16.985298165+01:00"
     description: Helm chart for ems6d-keConnector
     digest: ea08a7b3a670d20f2f86ab0e2efbba3a409905c780ad52075e493ccc1ed045d7
     name: legacy-broker-chart
@@ -22,7 +22,7 @@ entries:
     version: 0.1.0
   my-db:
   - apiVersion: v2
-    created: "2025-11-21T09:46:25.829510786+01:00"
+    created: "2025-11-21T10:49:16.986013578+01:00"
     description: Helm chart for DB container
     digest: 2b107635710cdaf5cac4020d89bcfaabb1450709bd588bd774ea62f6cd3ec25a
     name: my-db
@@ -31,7 +31,7 @@ entries:
     version: 0.1.0
   nmstrapd-chart:
   - apiVersion: v2
-    created: "2025-11-21T09:46:25.829904715+01:00"
+    created: "2025-11-21T10:49:16.986627899+01:00"
     description: Helm chart for trap-managers
     digest: d78afbe76e89dcbd5bdb546d221854193b0ab58c88225f1606d60472d4093bae
     name: nmstrapd-chart
@@ -40,20 +40,20 @@ entries:
     version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
-    created: "2025-11-21T09:46:25.831521792+01:00"
+    created: "2025-11-21T10:49:16.987462933+01:00"
     description: Helm chart for snmp2kafka deamons
-    digest: 57fafdf6606b969cffa212e78a02c7b95419b01c983a0cca1ec7a30a82b5adc5
+    digest: 4ab54f630b37705adaf8680ea3eafa2ceb0262ea7f1cc6adddf06fd8a818580a
     name: snmp2kafka-chart
     urls:
     - https://leonim-mila.github.io/helm/snmp2kafka-chart-0.1.0.tgz
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-21T09:46:25.832464804+01:00"
+    created: "2025-11-21T10:49:16.9880182+01:00"
     description: Helm chart for trapd
     digest: 73b72f8db0e144bb2badfda272e8650c93b530466f065e2faec6ade3d93d2146
     name: trapd-chart
     urls:
     - https://leonim-mila.github.io/helm/trapd-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-21T09:46:25.827731312+01:00"
+generated: "2025-11-21T10:49:16.983240329+01:00"
