@@ -3,7 +3,7 @@ entries:
   bit-kafka:
   - apiVersion: v2
     appVersion: 3.7.1-debian-12-r9
-    created: "2025-11-24T13:55:16.444493122+01:00"
+    created: "2025-11-24T16:15:40.031887885+01:00"
     description: Helm chart for Bitnami Kafka
     digest: 6e127c1a4aa7c9db4b8d4e25e9fb1e6c5c71b88ff9ff9ab0517efd3f7576a689
     name: bit-kafka
@@ -13,7 +13,7 @@ entries:
     version: 0.1.0
   legacy-broker-chart:
   - apiVersion: v2
-    created: "2025-11-24T13:55:16.445032707+01:00"
+    created: "2025-11-24T16:15:40.032154957+01:00"
     description: Helm chart for ems6d-keConnector
     digest: ea08a7b3a670d20f2f86ab0e2efbba3a409905c780ad52075e493ccc1ed045d7
     name: legacy-broker-chart
@@ -23,9 +23,9 @@ entries:
   msd-executor:
   - apiVersion: v2
     appVersion: 9.0.1
-    created: "2025-11-24T13:55:16.445539507+01:00"
+    created: "2025-11-24T16:15:40.032392042+01:00"
     description: Helm chart for MsdExecutor
-    digest: e1c01cdaafb719d3a2d2085791ffe3fd4f074035ca5f6750a57b0caeaa0ee1b1
+    digest: d78b2039ee91636e16bd4ebf454a6547c2f6739ace0869e35b4b4a6613b7bf4b
     name: msd-executor
     type: application
     urls:
@@ -33,7 +33,7 @@ entries:
     version: 0.1.1
   my-db:
   - apiVersion: v2
-    created: "2025-11-24T13:55:16.446014059+01:00"
+    created: "2025-11-24T16:15:40.032611573+01:00"
     description: Helm chart for DB container
     digest: ccdda0c61ff67281cc53a871c0a85977585f93f897c730cd6349f68db15c75ab
     name: my-db
@@ -42,7 +42,7 @@ entries:
     version: 0.2.0
   nmstrapd-chart:
   - apiVersion: v2
-    created: "2025-11-24T13:55:16.4464468+01:00"
+    created: "2025-11-24T16:15:40.032797212+01:00"
     description: Helm chart for trap-managers
     digest: d78afbe76e89dcbd5bdb546d221854193b0ab58c88225f1606d60472d4093bae
     name: nmstrapd-chart
@@ -51,7 +51,7 @@ entries:
     version: 0.1.0
   notification-streamer:
   - apiVersion: v2
-    created: "2025-11-24T13:55:16.446788005+01:00"
+    created: "2025-11-24T16:15:40.03296163+01:00"
     description: Helm chart for NotificationStreamer deamon
     digest: e14173c4218b7b3570ce063660d275436f53567461dbad74ce060543b9773bab
     name: notification-streamer
@@ -60,7 +60,7 @@ entries:
     version: 0.1.0
   snmp2kafka-chart:
   - apiVersion: v2
-    created: "2025-11-24T13:55:16.447384421+01:00"
+    created: "2025-11-24T16:15:40.033245776+01:00"
     description: Helm chart for snmp2kafka deamons
     digest: 4ab54f630b37705adaf8680ea3eafa2ceb0262ea7f1cc6adddf06fd8a818580a
     name: snmp2kafka-chart
@@ -69,7 +69,7 @@ entries:
     version: 0.1.0
   trapd-chart:
   - apiVersion: v2
-    created: "2025-11-24T13:55:16.447794487+01:00"
+    created: "2025-11-24T16:15:40.033437542+01:00"
     description: Helm chart for trapd
     digest: 73b72f8db0e144bb2badfda272e8650c93b530466f065e2faec6ade3d93d2146
     name: trapd-chart
@@ -78,11 +78,11 @@ entries:
     version: 0.1.0
   users-login-logout-service:
   - apiVersion: v2
-    created: "2025-11-24T13:55:16.448195126+01:00"
+    created: "2025-11-24T16:15:40.033642561+01:00"
     description: Helm chart for UsersLoginLogout
     digest: 1b68f53804d6daa6cd38bc06aa2f91eea40ba1bca3556b4695c4ff8d03e86a11
     name: users-login-logout-service
     urls:
     - https://leonim-mila.github.io/helm/users-login-logout-service-0.1.2.tgz
     version: 0.1.2
-generated: "2025-11-24T13:55:16.44356052+01:00"
+generated: "2025-11-24T16:15:40.031448133+01:00"
