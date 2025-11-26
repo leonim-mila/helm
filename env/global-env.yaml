@@ -4,5 +4,9 @@ metadata:
   name: global-env
   namespace: 
 data:
+  EMS6D: ems6d
   KAFKA_BROKERS: 'kafka:9092'
-  
+  NMS_DB_NAME: NMS5UX
+  ORACLE_HOST: database
+  ORACLE_PORT: '1521'
+
