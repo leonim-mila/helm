@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   alarms-realign:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.037319857+01:00"
+    created: "2025-12-16T13:19:03.772199618+01:00"
     description: Helm chart for AlarmsRealign
     digest: 6213a666a981c6412a68f15c680795172f092f62f5785a22c1ad80cf3110726e
     name: alarms-realign
@@ -12,7 +12,7 @@ entries:
   bit-kafka:
   - apiVersion: v2
     appVersion: 3.7.1-debian-12-r9
-    created: "2025-12-16T13:04:50.037678295+01:00"
+    created: "2025-12-16T13:19:03.772523279+01:00"
     description: Helm chart for Bitnami Kafka
     digest: 6e127c1a4aa7c9db4b8d4e25e9fb1e6c5c71b88ff9ff9ab0517efd3f7576a689
     name: bit-kafka
@@ -22,7 +22,7 @@ entries:
     version: 0.1.0
   command-manager:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.037903874+01:00"
+    created: "2025-12-16T13:19:03.77273144+01:00"
     description: Helm chart for CommandManager
     digest: e51b4ba71fbe4eef8ccbdd16be64f81c91aaad0abe9bfa0677fca47033ee5657
     name: command-manager
@@ -31,7 +31,7 @@ entries:
     version: 0.1.0
   connection-services:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.038928137+01:00"
+    created: "2025-12-16T13:19:03.773776586+01:00"
     description: Helm chart for Connection Services
     digest: d95ebcdcdd6b5ba4dc6398793cfa38bf6acbcb5a26536b9376e978f4098cea9c
     name: connection-services
@@ -40,7 +40,7 @@ entries:
     version: 0.1.4
   legacy-broker-chart:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.039197406+01:00"
+    created: "2025-12-16T13:19:03.774033259+01:00"
     description: Helm chart for ems6d-keConnector
     digest: ea08a7b3a670d20f2f86ab0e2efbba3a409905c780ad52075e493ccc1ed045d7
     name: legacy-broker-chart
@@ -50,7 +50,7 @@ entries:
   msd-executor:
   - apiVersion: v2
     appVersion: 9.0.1
-    created: "2025-12-16T13:04:50.039414652+01:00"
+    created: "2025-12-16T13:19:03.774582291+01:00"
     description: Helm chart for MsdExecutor
     digest: 433ac0c328c4d49bf4f822f26e806ca7e65126a0cee026ea43b68e6707584307
     name: msd-executor
@@ -60,7 +60,7 @@ entries:
     version: 0.1.2
   my-db:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.039695502+01:00"
+    created: "2025-12-16T13:19:03.775051326+01:00"
     description: Helm chart for DB container
     digest: ccdda0c61ff67281cc53a871c0a85977585f93f897c730cd6349f68db15c75ab
     name: my-db
@@ -69,7 +69,7 @@ entries:
     version: 0.2.0
   nms-core-scheduler:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.03992939+01:00"
+    created: "2025-12-16T13:19:03.775610751+01:00"
     description: Helm chart for NmsCoreScheduler
     digest: 2f0bc2a6b612d889172b94ffd82ab197119b8cb27a04b8257532dd3a4d719f50
     name: nms-core-scheduler
@@ -78,7 +78,7 @@ entries:
     version: 0.1.0
   nmseqsd:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.040148246+01:00"
+    created: "2025-12-16T13:19:03.775949363+01:00"
     digest: 3e243aec8e06d4652b491f0e6f370f7229b9ee592542ef85809104694d459849
     name: nmseqsd
     urls:
@@ -86,7 +86,7 @@ entries:
     version: 0.1.0
   nmsmnd:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.040352397+01:00"
+    created: "2025-12-16T13:19:03.778032386+01:00"
     description: Helm chart for nmsMnd
     digest: b2d7535769c6cea7b5c94e4af7d06e855654ee22559971a826d29a40353f4234
     name: nmsmnd
@@ -95,7 +95,7 @@ entries:
     version: 0.1.0
   nmstrapd-chart:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.040599413+01:00"
+    created: "2025-12-16T13:19:03.77837072+01:00"
     description: Helm chart for trap-managers
     digest: 1175ae1b5ab878b970aed2203cb4986556f5b4eff8e065f9c4322133160888ce
     name: nmstrapd-chart
@@ -104,7 +104,7 @@ entries:
     version: 0.1.2
   notification-streamer:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.040758939+01:00"
+    created: "2025-12-16T13:19:03.778602749+01:00"
     description: Helm chart for NotificationStreamer deamon
     digest: da1f491f6e9f16c666c38f2f842655de85e1121e32477a2e840a1bc005ce1dbb
     name: notification-streamer
@@ -113,7 +113,7 @@ entries:
     version: 0.1.0
   pm-daemon:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.040961078+01:00"
+    created: "2025-12-16T13:19:03.778828037+01:00"
     description: Helm chart for PmDaemon
     digest: 37628914ab3d696b126ca790fb90ecebcc473c123cb5c4229445d50514877db2
     name: pm-daemon
@@ -122,7 +122,7 @@ entries:
     version: 0.1.0
   poller:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.041142511+01:00"
+    created: "2025-12-16T13:19:03.779041271+01:00"
     description: Helm chart for Poller daemon
     digest: ba6166176cbd99bb8b13d98cab0b96681e5c6ff304096263838889c2a59f9530
     name: poller
@@ -131,7 +131,7 @@ entries:
     version: 0.1.1
   post-action-manager:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.041341665+01:00"
+    created: "2025-12-16T13:19:03.779278381+01:00"
     description: Helm chart for PostActionManager
     digest: 932d8fa611e7d02723f6bed014ad93fc25af6df19d7ba18b305c09f7d93814a0
     name: post-action-manager
@@ -140,7 +140,7 @@ entries:
     version: 0.1.0
   snmp-scheduler-hybrid:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.041571036+01:00"
+    created: "2025-12-16T13:19:03.779489692+01:00"
     description: Helm chart for SchedulerHybrid
     digest: b2b719d822faf4253e8d17376b00f91117030cad4769df0a5a2aeefba139d0d8
     name: snmp-scheduler-hybrid
@@ -149,7 +149,7 @@ entries:
     version: 0.1.0
   snmp-timeout-manager:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.041753407+01:00"
+    created: "2025-12-16T13:19:03.779697265+01:00"
     digest: c3b773dbd0945f9300cfe5113f6dbe2575f9c1de39865c2300952ed500ecebad
     name: snmp-timeout-manager
     urls:
@@ -157,7 +157,7 @@ entries:
     version: 0.1.0
   snmp2kafka:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.042140165+01:00"
+    created: "2025-12-16T13:19:03.779965333+01:00"
     description: Helm chart for snmp2kafka deamons
     digest: f1a1f79a6428e6f730a117e2df7efbd73c49785b51babb7ac29f472fd915b94a
     name: snmp2kafka
@@ -166,17 +166,17 @@ entries:
     version: 0.2.0
   ssh-sftp:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.042728699+01:00"
+    created: "2025-12-16T13:19:03.780149473+01:00"
     description: SFTP server non-root compatibile OpenShift
-    digest: d627210b7ef8fc49add67de4e92c3965b018e4fdd7c4016750d17a2fd0ccf3cf
+    digest: d1f5ca0ae18fc637cb7cdbe5fa5eaab8b5b91f9c586a43da83e6065eb1549a15
     name: ssh-sftp
     type: application
     urls:
-    - https://leonim-mila.github.io/helm/ssh-sftp-0.2.5.tgz
-    version: 0.2.5
+    - https://leonim-mila.github.io/helm/ssh-sftp-0.2.6.tgz
+    version: 0.2.6
   trapd-chart:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.043859205+01:00"
+    created: "2025-12-16T13:19:03.780345965+01:00"
     description: Helm chart for trapd
     digest: 063e94fedd278c1ac6278a1fa1c5278f43956b760f5c4a8839aa813677c65416
     name: trapd-chart
@@ -185,11 +185,11 @@ entries:
     version: 0.1.0
   users-login-logout-service:
   - apiVersion: v2
-    created: "2025-12-16T13:04:50.044194349+01:00"
+    created: "2025-12-16T13:19:03.780541306+01:00"
     description: Helm chart for UsersLoginLogout
     digest: 57fdc6a0404d62c94dd9aac70e5f21b17c001eeb1483d8618c731c4a1d1522aa
     name: users-login-logout-service
     urls:
     - https://leonim-mila.github.io/helm/users-login-logout-service-0.1.2.tgz
     version: 0.1.2
-generated: "2025-12-16T13:04:50.036869077+01:00"
+generated: "2025-12-16T13:19:03.77180014+01:00"
